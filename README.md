@@ -1,18 +1,20 @@
-# Description
+## Description
 
 Checks if luma difference between lines are below or above given threshold.
 
-# Requirement
+### Requirements:
 
-AviSynth+ >+ 3.6.
+- AviSynth+ 3.6 or later
 
-# Usage
+- Microsoft VisualC++ Redistributable Package 2022 (can be downloaded from [here](https://github.com/abbodi1406/vcredist/releases)) (Windows only)
+
+### Usage:
 
 ```
 LinesLumaDiff (clip, string "output", int "left", int "top", int "right", int "bottom", float "tl", float "tt", float "tr", float "tb")
 ```
 
-## Parameters:
+### Parameters:
 
 - clip\
     A clip to process. It must in YUV planar format.    
@@ -32,26 +34,24 @@ LinesLumaDiff (clip, string "output", int "left", int "top", int "right", int "b
     Must be between 0.0 and 1.0.\
     Default: tl = tt = tr = tb = 0.14.
 
-# Building
+### Building:
 
-## Windows
+- Windows\
+    Use solution files.
 
-Use solution files.
-
-## Linux
-
-### Requirements
-
-- Git
-- C++11 compiler
-- CMake >= 3.16
-
-```
-git clone https://github.com/Asd-g/AviSynth-LinesLumaDiff && \
-cd AviSynth-LinesLumaDiff && \
-mkdir build && \
-cd build && \
-cmake .. && \
-make -j$(nproc) && \
-sudo make install
-```
+- Linux
+    ```
+    Requirements:
+        - Git
+        - C++11 compiler
+        - CMake >= 3.16
+    ```
+    ```
+    git clone https://github.com/Asd-g/AviSynth-LinesLumaDiff && \
+    cd AviSynth-LinesLumaDiff && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make -j$(nproc) && \
+    sudo make install
+    ```
