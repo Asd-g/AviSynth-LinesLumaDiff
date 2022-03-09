@@ -25,7 +25,7 @@ target_include_directories(lineslumadiff PRIVATE /usr/local/include/avisynth)
 
 set_target_properties(lineslumadiff PROPERTIES OUTPUT_NAME "lineslumadiff.${ver}")
 
-target_compile_features(lineslumadiff PRIVATE cxx_std_11)
+target_compile_features(lineslumadiff PRIVATE cxx_std_17)
 
 include(GNUInstallDirs)
 
