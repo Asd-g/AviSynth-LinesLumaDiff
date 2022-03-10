@@ -36,7 +36,8 @@ LinesLumaDiff (clip, string "output", int "left", int "top", int "right", int "b
 
 - flush\
     True: The frame number is saved right after the difference is above the threshold.\
-    False: All frames with difference above the threshold are saved at once after the end of video.
+    False: All frames with difference above the threshold are saved at once after the end of video.\
+    Default: False.
 
 ### Building:
 
